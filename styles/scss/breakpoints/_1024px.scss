@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px) {
+  //navbar
+  .container__navbar {
+    display: none;
+  }
+
+  //navi
+
+  .container__navi--grid__second {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+    a,
+    button {
+      transition: all 0.26s ease-in-out;
+      width: fit-content;
+      margin: 10px auto 0 auto;
+      text-align: center;
+    }
+
+    button {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .hamburger {
+    border: 1px solid #e3e3e3;
+    padding: 0 0.8rem;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 16px;
+  }
+}
+
+//FOR JS
+.container__navi--grid__second.active {
+  display: flex;
+  flex-direction: column;
+}

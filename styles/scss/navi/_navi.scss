@@ -1,0 +1,47 @@
+.container {
+  &__navi--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    &__first {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      grid-column: 1/6;
+      padding-left: 1rem;
+      h1 {
+        color: $brown;
+      }
+    }
+
+    &__second {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      grid-column: 14/15;
+
+      a {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          color: $brown;
+        }
+      }
+
+      a.activee {
+        color: $brown;
+      }
+    }
+  }
+}
+
+.hamburger {
+  visibility: hidden;
+  &__line {
+    width: 30px;
+    height: 1px;
+    background-color: #737373;
+    margin: 8px 0;
+  }
+}

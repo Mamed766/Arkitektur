@@ -1,0 +1,28 @@
+.container__content {
+  background-image: url("https://themewagon.github.io/arkitektur/img/carousel-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  &--desc {
+    grid-column: 2/8;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      width: 150px;
+    }
+  }
+}

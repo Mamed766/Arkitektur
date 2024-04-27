@@ -1,0 +1,13 @@
+.btn {
+  padding: 14px 32px;
+  background-color: $brown;
+  transition: all 0.25s ease-in-out;
+  border: 1px solid #e3e3e3;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($brown, 0.8);
+  }
+}

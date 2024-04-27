@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+.btn {
+  padding: 14px 32px;
+  background-color: #b78d65;
+  transition: all 0.25s ease-in-out;
+  border: 1px solid #e3e3e3;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(183, 141, 101, 0.8);
+}
+
+.container__navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #252525;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.container__navbar--first {
+  display: flex;
+  gap: 1.2rem;
+}
+.container__navbar--second {
+  display: flex;
+  gap: 2rem;
+}
+.container__navbar--second__content {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.container__navbar--second a {
+  transition: all 0.25s ease-in-out;
+}
+.container__navbar--second a i {
+  color: #b78d65;
+}
+.container__navbar--second__icons {
+  display: flex;
+  gap: 0.3rem;
+  color: #b78d65;
+}
+.container__navbar--second__icons div {
+  border: 1px solid white;
+  transition: all 0.25s ease-in-out;
+  padding: 0.5rem;
+}
+.container__navbar--second__icons div:hover {
+  background-color: #b78d65;
+  cursor: pointer;
+}
+.container__navbar--second__icons div:hover i {
+  color: white;
+}
+.container__navbar p {
+  color: white;
+}
+.container__navbar p i {
+  color: #b78d65;
+}
+
+.container__navi--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+.container__navi--grid__first {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  grid-column: 1/6;
+  padding-left: 1rem;
+}
+.container__navi--grid__first h1 {
+  color: #b78d65;
+}
+.container__navi--grid__second {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  grid-column: 14/15;
+}
+.container__navi--grid__second a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+.container__navi--grid__second a:hover {
+  color: #b78d65;
+}
+.container__navi--grid__second a.activee {
+  color: #b78d65;
+}
+
+.hamburger {
+  visibility: hidden;
+}
+.hamburger__line {
+  width: 30px;
+  height: 1px;
+  background-color: #737373;
+  margin: 8px 0;
+}
+
+.container__content {
+  background-image: url("https://themewagon.github.io/arkitektur/img/carousel-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.container__content--desc {
+  grid-column: 2/8;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container__content--desc h1 {
+  font-size: 50px;
+}
+.container__content--desc p {
+  font-size: 20px;
+}
+.container__content--desc button {
+  width: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__navbar {
+    display: none;
+  }
+  .container__navi--grid__second {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .container__navi--grid__second a,
+  .container__navi--grid__second button {
+    transition: all 0.26s ease-in-out;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    text-align: center;
+  }
+  .container__navi--grid__second button {
+    margin-bottom: 0.3rem;
+  }
+  .hamburger {
+    border: 1px solid #e3e3e3;
+    padding: 0 0.8rem;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 16px;
+  }
+}
+.container__navi--grid__second.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
