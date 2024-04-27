@@ -1,0 +1,41 @@
+.container {
+  &__information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &--card {
+      display: flex;
+      flex-direction: column;
+      margin: 10rem 0;
+      padding: 0 0.5rem;
+      gap: 2rem;
+      width: 25%;
+      height: 20rem;
+      background-color: #f8f8f8;
+      transition: all 0.25s ease-in-out;
+      &:hover &__img {
+        background-color: #252525;
+        transition: all 0.25s ease-in-out;
+      }
+
+      p {
+        color: gray;
+      }
+
+      &__img {
+        border-radius: 5rem;
+        padding: 1.5rem;
+        background-color: #f8f8f8;
+        transform: translateY(-70px);
+        transition: all 0.25s ease-in-out;
+      }
+
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
