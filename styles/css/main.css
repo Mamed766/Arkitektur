@@ -262,7 +262,7 @@
 }
 .container__services--cards__card:hover {
   background: linear-gradient(to right, #8b4513, #000);
-  color: white;
+  color: #e3e3e3;
 }
 .container__services--cards__card:hover button {
   padding-right: 6.5rem;
@@ -302,6 +302,61 @@
 }
 .container__services--head h3 {
   color: #b78d65;
+}
+
+.container__option {
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container__option h3 {
+  color: #b78d65;
+}
+.container__option p {
+  color: gray;
+}
+.container__option--content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+}
+.container__option--content__cards {
+  display: flex;
+  flex-direction: column;
+}
+.container__option--content__cards--card {
+  display: flex;
+  gap: 0.5rem;
+}
+.container__option--imgs {
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.container__option--imgs::before {
+  position: absolute;
+  content: "";
+  width: 20rem;
+  height: 25rem;
+  top: 10%;
+  left: 20%;
+  border: 5px solid #b78d65;
+  z-index: -1;
+}
+.container__option--imgs__first img {
+  height: 80%;
+  width: 17rem;
+}
+.container__option--imgs__second {
+  position: absolute;
+  bottom: -10rem;
+  left: 10rem;
+}
+.container__option--imgs__second img {
+  height: 80%;
+  width: 16rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -345,6 +400,23 @@
     flex-direction: column;
     margin: 5rem 50px;
     gap: 10rem;
+  }
+  .container__option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .container__option--content {
+    width: 100%;
+  }
+  .container__option--imgs {
+    position: relative;
+    display: flex;
+    margin: 0;
+    width: 100%;
   }
 }
 .container__navi--grid__second.active {

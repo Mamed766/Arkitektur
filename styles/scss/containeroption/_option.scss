@@ -1,0 +1,59 @@
+.container__option {
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: $brown;
+  }
+  p {
+    color: gray;
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      &--card {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  &--imgs {
+    position: relative;
+
+    margin-top: 4rem;
+    margin-left: 2rem;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20rem;
+      height: 25rem;
+      top: 10%;
+      left: 20%;
+      border: 5px solid $brown;
+      z-index: -1;
+    }
+    &__first {
+      img {
+        height: 80%;
+        width: 17rem;
+      }
+    }
+
+    &__second {
+      position: absolute;
+      bottom: -10rem;
+      left: 10rem;
+      img {
+        height: 80%;
+        width: 16rem;
+      }
+    }
+  }
+}
