@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: #252525;
+  height: 20rem;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    &--card {
+      display: flex;
+      gap: 0.5rem;
+
+      &__input {
+        input {
+          &:nth-child(1) {
+            padding: 8px 16px;
+            border: 1px solid $brown;
+            outline: 0;
+          }
+
+          &:nth-child(2) {
+            padding: 8px 16px;
+            background-color: $brown;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+              opacity: 0.5;
+            }
+            color: #fff;
+            border: 1px solid $brown;
+          }
+        }
+      }
+
+      h3 {
+        color: white;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $brown;
+        i {
+          color: $brown;
+        }
+        span {
+          color: gray;
+        }
+      }
+
+      a {
+        cursor: pointer;
+        i {
+          color: $brown;
+        }
+
+        &:hover span {
+          color: $brown;
+        }
+
+        span {
+          color: gray;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5rem;
+    }
+  }
+}

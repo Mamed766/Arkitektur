@@ -398,6 +398,67 @@
   height: 100%;
 }
 
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: #252525;
+  height: 20rem;
+}
+.footer__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.footer__cards--card {
+  display: flex;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.footer__cards--card__input input:nth-child(1) {
+  padding: 8px 16px;
+  border: 1px solid #b78d65;
+  outline: 0;
+}
+.footer__cards--card__input input:nth-child(2) {
+  padding: 8px 16px;
+  background-color: #b78d65;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  border: 1px solid #b78d65;
+}
+.footer__cards--card__input input:nth-child(2):hover {
+  opacity: 0.5;
+}
+.footer__cards--card h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.footer__cards--card p {
+  color: #b78d65;
+}
+.footer__cards--card p i {
+  color: #b78d65;
+}
+.footer__cards--card p span {
+  color: gray;
+}
+.footer__cards--card a {
+  cursor: pointer;
+}
+.footer__cards--card a i {
+  color: #b78d65;
+}
+.footer__cards--card a:hover span {
+  color: #b78d65;
+}
+.footer__cards--card a span {
+  color: gray;
+  transition: all 0.25s ease-in-out;
+}
+
 @media screen and (max-width: 1024px) {
   .container__navbar {
     display: none;
@@ -456,6 +517,15 @@
     display: flex;
     margin: 0;
     width: 100%;
+  }
+  .footer {
+    height: 45rem;
+    padding: 0 20px;
+  }
+  .footer__cards--card__input label {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
 }
 .container__navi--grid__second.active {

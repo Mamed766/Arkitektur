@@ -71,6 +71,24 @@
       width: 100%;
     }
   }
+
+  //Footer
+  .footer {
+    height: 45rem;
+    padding: 0 20px;
+
+    &__cards {
+      &--card {
+        &__input {
+          label {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 //FOR JS
