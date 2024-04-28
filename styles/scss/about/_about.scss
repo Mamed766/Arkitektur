@@ -1,0 +1,82 @@
+.container {
+  &__about {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      grid-column: 7/12;
+      gap: 0.5rem;
+      button {
+        width: 150px;
+      }
+
+      &__year {
+        display: flex;
+        gap: 2rem;
+
+        & p:nth-child(1) {
+          color: black;
+        }
+
+        & p:nth-child(2) {
+          color: black;
+          font-size: 30px;
+        }
+
+        width: 50px;
+        margin-bottom: 2rem;
+
+        &--num {
+          padding: 20px 40px;
+          border: 5px solid $brown;
+          p {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+
+    h3 {
+      color: $brown;
+    }
+    p {
+      color: gray;
+    }
+
+    &--imgs {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20rem;
+        height: 25rem;
+        top: 10%;
+        left: 20%;
+        border: 5px solid $brown;
+        z-index: -1;
+      }
+
+      grid-column: 3/4;
+      &__first {
+        img {
+          height: 80%;
+          width: 17rem;
+        }
+      }
+
+      &__second {
+        position: absolute;
+        bottom: -10rem;
+        left: 10rem;
+        img {
+          height: 80%;
+          width: 16rem;
+        }
+      }
+    }
+  }
+}

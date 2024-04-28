@@ -177,6 +177,73 @@
   transition: all 0.25s ease-in-out;
 }
 
+.container__about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.container__about--content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 7/12;
+  gap: 0.5rem;
+}
+.container__about--content button {
+  width: 150px;
+}
+.container__about--content__year {
+  display: flex;
+  gap: 2rem;
+  width: 50px;
+  margin-bottom: 2rem;
+}
+.container__about--content__year p:nth-child(1) {
+  color: black;
+}
+.container__about--content__year p:nth-child(2) {
+  color: black;
+  font-size: 30px;
+}
+.container__about--content__year--num {
+  padding: 20px 40px;
+  border: 5px solid #b78d65;
+}
+.container__about--content__year--num p {
+  font-size: 50px;
+}
+.container__about h3 {
+  color: #b78d65;
+}
+.container__about p {
+  color: gray;
+}
+.container__about--imgs {
+  position: relative;
+  grid-column: 3/4;
+}
+.container__about--imgs::before {
+  position: absolute;
+  content: "";
+  width: 20rem;
+  height: 25rem;
+  top: 10%;
+  left: 20%;
+  border: 5px solid #b78d65;
+  z-index: -1;
+}
+.container__about--imgs__first img {
+  height: 80%;
+  width: 17rem;
+}
+.container__about--imgs__second {
+  position: absolute;
+  bottom: -10rem;
+  left: 10rem;
+}
+.container__about--imgs__second img {
+  height: 80%;
+  width: 16rem;
+}
+
 @media screen and (max-width: 1024px) {
   .container__navbar {
     display: none;
@@ -212,6 +279,12 @@
   .container__information--card {
     width: 100%;
     margin: 1.8rem 0;
+  }
+  .container__about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    gap: 10rem;
   }
 }
 .container__navi--grid__second.active {

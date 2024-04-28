@@ -43,6 +43,14 @@
     width: 100%;
     margin: 1.8rem 0;
   }
+
+  //   About Us
+  .container__about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    gap: 10rem;
+  }
 }
 
 //FOR JS
