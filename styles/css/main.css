@@ -180,6 +180,7 @@
 .container__about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 14rem;
 }
 .container__about--content {
   display: flex;
@@ -244,6 +245,65 @@
   width: 16rem;
 }
 
+.container__services--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  gap: 20px;
+  transition: all 0.25s ease-in-out;
+}
+.container__services--cards__card {
+  padding: 20px 20px;
+  height: 20rem;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+.container__services--cards__card:hover {
+  background: linear-gradient(to right, #8b4513, #000);
+  color: white;
+}
+.container__services--cards__card:hover button {
+  padding-right: 6.5rem;
+}
+.container__services--cards__card:hover button p {
+  opacity: 1;
+}
+.container__services--cards__card button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+  margin: auto 0;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.container__services--cards__card button p {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 4rem;
+  left: calc(100% - 80px);
+  transform: translateY(-50%);
+}
+.container__services--cards__card button i {
+  color: #b78d65;
+}
+
+.container__services--head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container__services--head h3 {
+  color: #b78d65;
+}
+
 @media screen and (max-width: 1024px) {
   .container__navbar {
     display: none;
@@ -283,7 +343,7 @@
   .container__about {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 5rem 50px;
     gap: 10rem;
   }
 }
